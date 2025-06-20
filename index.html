@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <button class="header__burger" type="button">
+            <span></span>
+        </button>
+        <nav class="header__nav">
+            <div class="header__nav-wrapper">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Сертификаты</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Опыт</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Контакты</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Тендеры</a>
+                    </li>
+                </ul>
+                <ul class="header__actions">
+                    <li class="header__action">
+                        <span class="header__action-label">Монтаж</span>
+                        <div class="header__action-icon">
+                            <svg>
+                                <use href="#settings"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="header__action">
+                        <span class="header__action-label">Магазин</span>
+                        <div class="header__action-icon">
+                            <svg>
+                                <use href="#shop"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="header__contact">
+                        <button class="header__action header__action--big header__contact-button" type="button">
+                            <span class="header__action-label">Связяться</span>
+                            <div class="header__action-icon">
+                                <svg>
+                                    <use href="#arrow"></use>
+                                </svg>
+                            </div>
+                        </button>
+                        <ul class="header__contact-list">
+                            <li class="header__contact-item">
+                                <a href="tel:+79991234567" class="header__action header__action--big header__contact-link">
+                                    <span class="header__action-label">Позвонить</span>
+                                    <div class="header__action-icon">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header__contact-item">
+                                <a href="https://wa.me/79991234567" target="_blank" class="header__action header__action--big header__contact-link">
+                                    <span class="header__action-label">Whatsapp</span>
+                                    <div class="header__action-icon">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header__contact-item">
+                                <a href="https://t.me/username" target="_blank" class="header__action header__action--big header__contact-link">
+                                    <span class="header__action-label">Telegram</span>
+                                    <div class="header__action-icon">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header__contact-item">
+                                <a href="mailto:mail@mail.ru" class="header__action header__action--big header__contact-link">
+                                    <span class="header__action-label">E-mail</span>
+                                    <div class="header__action-icon">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a class="header__phone" href="tel:+79991234567">
+            <svg>
+                <use href="#phone"></use>
+            </svg>
+        </a>
+    </header>
+    <svg style="display: none;">
+        <symbol id="settings" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_1_743)">
+                <path d="M2.01811 22.4172C3.60083 23.9999 5.78826 23.9134 7.50511 22.2064C8.87654 20.8345 11.7257 15.9904 14.2007 13.5154C15.8507 11.8654 17.673 12.7384 19.5051 11.9905L17.8744 6.0428C17.673 5.30394 17.9704 4.69023 18.8241 4.46009L22.4211 3.50094C22.3058 3.16494 21.9895 2.70466 21.5961 2.3018C19.3804 0.0856565 15.7161 -5.76973e-05 13.5295 2.07209C10.3453 5.1128 12.7624 8.32623 10.6615 10.4267C8.02368 13.0645 4.18668 14.9258 2.22983 16.9208C0.512541 18.6475 0.416541 20.8152 2.01811 22.4172ZM13.9418 7.87537C13.731 7.9328 13.5583 7.82737 13.4815 7.5968C13.4241 7.42451 13.5488 7.21323 13.7503 7.1558L15.9853 6.55151C16.1674 6.50351 16.3783 6.6188 16.4361 6.82023C16.4935 7.04094 16.3688 7.23251 16.1674 7.28994L13.9418 7.87537ZM20.5705 11.5298C20.9817 11.2777 21.3644 10.9818 21.7118 10.6474C22.9204 9.55409 23.544 7.90409 23.2945 6.73366L20.388 7.52994C20.0623 7.61609 19.7935 7.63537 19.4863 7.58737L20.5705 11.5298ZM14.2294 9.01709C14.0181 9.07451 13.836 8.96909 13.7593 8.73894C13.7018 8.56623 13.8265 8.35537 14.028 8.30737L16.263 7.69366C16.4451 7.65509 16.656 7.76051 16.7138 7.96194C16.7807 8.18266 16.6465 8.37466 16.4451 8.43209L14.2294 9.01709ZM14.5075 10.1588C14.3061 10.2162 14.1047 10.1108 14.0567 9.89009C14.0087 9.68866 14.124 9.50651 14.3254 9.44866L16.5505 8.85423C16.5971 8.83827 16.6465 8.83213 16.6955 8.83621C16.7446 8.84029 16.7923 8.8545 16.8356 8.87794C16.8789 8.90138 16.9168 8.93354 16.9471 8.97239C16.9773 9.01124 16.9992 9.05593 17.0113 9.10366C17.0498 9.29523 16.9341 9.50651 16.752 9.55451L14.5075 10.1588ZM3.52411 20.9207C2.87183 20.2684 2.8624 19.1751 3.50525 18.5228C4.15754 17.8512 5.24097 17.8799 5.91297 18.5129C6.6034 19.1652 6.53611 20.2401 5.90311 20.9207C5.29883 21.5828 4.16697 21.5635 3.52454 20.9207" fill="currentColor"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_743">
+                <rect width="24" height="24" fill="white"/>
+            </clipPath>
+            </defs>
+        </symbol>
+        <symbol id="shop" viewBox="0 0 24 24" fill="none">
+            <path d="M12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8H9C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8H17C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13ZM12 3C12.7956 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6H9C9 5.20435 9.31607 4.44129 9.87868 3.87868C10.4413 3.31607 11.2044 3 12 3ZM19 6H17C17 5.34339 16.8707 4.69321 16.6194 4.08658C16.3681 3.47995 15.9998 2.92876 15.5355 2.46447C15.0712 2.00017 14.52 1.63188 13.9134 1.3806C13.3068 1.12933 12.6566 1 12 1C10.6739 1 9.40215 1.52678 8.46447 2.46447C7.52678 3.40215 7 4.67392 7 6H5C3.89 6 3 6.89 3 8V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V8C21 7.46957 20.7893 6.96086 20.4142 6.58579C20.0391 6.21071 19.5304 6 19 6Z" fill="currentColor"/>
+        </symbol>
+        <symbol id="arrow" viewBox="0 0 24 24" fill="none">
+            <path d="M22.5768 8.56487L13.0148 18.5591C12.8815 18.6988 12.7232 18.8097 12.5488 18.8854C12.3745 18.961 12.1876 19 11.9988 19C11.81 19 11.6231 18.961 11.4488 18.8854C11.2744 18.8097 11.1161 18.6988 10.9828 18.5591L1.42083 8.56487C1.15138 8.28324 1 7.90126 1 7.50298C1 7.1047 1.15138 6.72273 1.42083 6.4411C1.69028 6.15947 2.05573 6.00125 2.43679 6.00125C2.81785 6.00125 3.1833 6.15947 3.45275 6.4411L12 15.3747L20.5472 6.43985C20.8167 6.15822 21.1821 6 21.5632 6C21.9443 6 22.3097 6.15822 22.5792 6.43985C22.8486 6.72148 23 7.10345 23 7.50173C23 7.90002 22.8486 8.28199 22.5792 8.56362L22.5768 8.56487Z" fill="currentColor"/>
+        </symbol>
+        <symbol id="phone" viewBox="0 0 16 16" fill="none">
+            <path d="M10.6673 11.3711L12.0451 9.99278C12.2307 9.80944 12.4654 9.68394 12.7209 9.63151C12.9764 9.57908 13.2416 9.60198 13.4844 9.69743L15.1635 10.3681C15.4088 10.4677 15.6191 10.6377 15.768 10.8567C15.9169 11.0758 15.9976 11.3339 16 11.5988V14.6753C15.9986 14.8555 15.9607 15.0335 15.8887 15.1986C15.8167 15.3638 15.712 15.5126 15.581 15.6362C15.45 15.7598 15.2953 15.8556 15.1263 15.9178C14.9573 15.9801 14.7775 16.0074 14.5976 15.9983C2.83136 15.2661 0.457192 5.29791 0.00819117 1.48294C-0.0126518 1.2956 0.00639187 1.10596 0.0640691 0.926515C0.121746 0.747064 0.21675 0.581865 0.34283 0.441784C0.468911 0.301703 0.62321 0.189915 0.795577 0.113775C0.967944 0.0376351 1.15447 -0.00113167 1.34289 2.51474e-05H4.31368C4.57878 0.000810161 4.83758 0.0809193 5.0568 0.230049C5.27602 0.379178 5.44563 0.590508 5.54382 0.836857L6.21424 2.51667C6.31281 2.75854 6.33796 3.02409 6.28654 3.28017C6.23513 3.53624 6.10944 3.77149 5.92516 3.95652L4.5474 5.33483C4.5474 5.33483 5.34084 10.7065 10.6673 11.3711Z" fill="currentColor"/>
+        </symbol>
+    </svg>
+    <script src="./script.js"></script>
+</body>
+</html>
